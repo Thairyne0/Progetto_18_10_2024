@@ -219,6 +219,23 @@ console.log(howManyDays("2023-01-01"));
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
 
+const isTodayMyBirthday = function () {
+  const oggi = new Date();
+  const giornoCompleanno = 9;
+  const meseCompleanno = 4;
+
+  if (
+    oggi.getDate() === giornoCompleanno &&
+    oggi.getMonth() === meseCompleanno
+  ) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log(isTodayMyBirthday());
+
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
